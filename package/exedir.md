@@ -1,7 +1,14 @@
 
 ## `local exedir = require'package.exedir'`
 
-Get the directory of the LuaJIT executable.
+Get the full path of the directory of the LuaJIT executable.
 
-This is a LuaJIT built-in in the LuaJIT binary included in luapower,
-so this package is only needed if using vanilla LuaJIT.
+## `local exepath = require'package.exepath'`
+
+Get the full path of the LuaJIT executable.
+
+## NOTE
+
+These modules are built-ins in the [LuaJIT binary included in luapower][luajit].
+These [fs]-based alternative implementations are only needed if using vanilla
+LuaJIT.
